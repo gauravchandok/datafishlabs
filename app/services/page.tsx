@@ -45,7 +45,7 @@ export default function Page() {
         way!"
       />
 
-      <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-7xl">
+      <div className="mx-auto px-4 mt-16 max-w-2xl lg:px-0 sm:mt-20 lg:mt-24 lg:max-w-7xl">
         <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
           {features.map((feature) => (
             <div key={feature.name} className="flex flex-col">

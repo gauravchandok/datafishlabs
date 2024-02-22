@@ -6,7 +6,7 @@ import Contact from "./components/Contact";
 
 export default function Home() {
   return (
-    <main className="flex flex-col mx-4 mt-8 lg:mx-auto w-full">
+    <main className="flex flex-col mt-8 lg:mx-auto w-full">
       <HeroSection />
       <ExpertiseSection />
       <WhyDataFish />

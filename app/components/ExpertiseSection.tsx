@@ -70,13 +70,13 @@ export default function ExpertiseSection() {
             {features.map((feature, index) => (
               <div
                 key={feature.name}
-                className={`relative pl-16 ${
+                className={`md:pl-16 ${
                   features.length - 1 === index &&
-                  "col-span-2 place-items-center w-[60%] mx-auto"
-                }`}
+                  "col-span-1 md:col-span-2 place-items-center w-full md:w-[60%] mx-auto"
+                } `}
               >
                 <dt className="text-base font-semibold leading-7 text-gray-900">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                     <feature.icon
                       className="h-6 w-6 text-white"
                       aria-hidden="true"

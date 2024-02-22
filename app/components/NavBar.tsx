@@ -18,21 +18,21 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="lg:sticky inset-x-0 top-0 z-50">
+    <header className="sticky inset-x-0 top-0 z-50">
       <div className="mx-auto w-full bg-white">
-        <div className="px-6 pt-6 lg:max-w-2xl lg:pl-10 lg:pr-0 bg-white lg:pb-4">
+        <div className="px-6 py-6 lg:max-w-2xl lg:pl-10 lg:pr-0 bg-white lg:pb-4">
           <nav
             className="flex items-center justify-between lg:justify-start"
             aria-label="Global"
           >
-            {/* <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img
-                  alt="Your Company"
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                />
-              </a> */}
+            <a href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">DatafishLabs</span>
+              <img
+                alt="Datafish logo"
+                className="h-8 w-auto"
+                src="/logos/datafish-icon.svg"
+              />
+            </a>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700 lg:hidden"
@@ -65,12 +65,12 @@ export default function Navbar() {
         <div className="fixed inset-0 z-50" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+            <a href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">DatafishLabs</span>
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
+                src="/logos/datafish-icon.svg"
+                alt="logo"
               />
             </a>
             <button
@@ -94,14 +94,6 @@ export default function Navbar() {
                     {item.name}
                   </a>
                 ))}
-              </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a>
               </div>
             </div>
           </div>
